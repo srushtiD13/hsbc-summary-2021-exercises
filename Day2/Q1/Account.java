@@ -28,16 +28,15 @@ public class Account {
 	
 	public String display() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Account [accountNumber=");
-		builder.append(accountNumber);
+		builder.append("Account accountNumber=");
+		builder.append(this.accountNumber);
 		builder.append(", balance=");
-		builder.append(balance);
+		builder.append(this.balance);
 		builder.append(", ifsc=");
-		builder.append(ifsc);
-		builder.append("]");
+		builder.append(this.ifsc);
 		return builder.toString();
 	}
-	
+
 	
 	
 	

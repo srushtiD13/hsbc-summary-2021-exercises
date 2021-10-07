@@ -20,15 +20,11 @@ public class Current extends Account {
 	@Override
 	public String display() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Current Account [accountNumber=");
-		builder.append(super.getAccountNumber());
-		builder.append(", balance=");
-		builder.append(super.getBalance());
-		builder.append(", ifsc=");
-		builder.append(super.getIfsc());
+		builder.append("Current Account ");
+		builder.append(super.display());
 		builder.append(", Nominee Name=");
 		builder.append(nomineeName);
-		builder.append("]");
+	
 		
 		
 		return builder.toString();
